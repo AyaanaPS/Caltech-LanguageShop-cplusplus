@@ -1,0 +1,24 @@
+Received a 2.
+
+Comment:
+
+Good job, one minor fix though you still have a segmentation fault when your
+code receives no arguments, you should print the usage message and return with a
+non-zero value (denoting an error). A minor style detail about method headers,
+you should not put a space between header comments and their methods, also
+usually these start with an extra "*" or "!", so for
+example:
+
+
+
+/*! This function prints foo */
+void foo(void) {
+... 
+}
+
+
+
+This will cause it to get picked up by doxygen or other
+documentation-generating programs. Just minor style fix though, you can just
+keep it in mind for future labs. Just fix the segmentation fault for full
+credit.
